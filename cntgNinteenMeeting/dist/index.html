@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Are you a language maestro?</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body onload="playAudio()">
+  <audio id="music" preload autoplay loop src="./audio.mp3"></audio>
+  <div class="img_loader columnCenter">
+    <img src="./img/index/LOGO.png" alt="" style="width:14.2vw;margin:0 auto 22px">
+    <div class="loading_num rowBetween">
+      <div class="load_wrap">
+        <p class="load_progress"></p>
+      </div>
+      <img src="./img/index/load_num.png" class="load_number" style="" alt="">
+    </div>
+  </div>
+  <!-- Swiper -->
+  <div class="swiper-container swiper-container-v">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide stop-swiping" data-hash="vslide1">
+        <img src="./img/index/index_bg.png" class="coverImg" alt="">
+        <div class="ask_ani cloud"></div>
+        <div class="index_title">
+          <img src="./img/index/title.png" style="width:100%" alt="">
+          <p class="index_title_word_eg none">Starts Now       </p>
+          <p class="index_title_word"></p>
+        </div>
+      </div>
+      <div class="swiper-slide" data-hash="vslide2" style="background:#fffce2">
+        <div class="sub_under columnBetween">
+          <img src="./img/sub/mont.png" alt="">
+          <img src="./img/sub/word.png" style="width:94%" alt="">
+          <div class="sub_book_wrap">
+            <img src="./img/sub/book.png" class="sub_book_img" alt="" style="z-index:1">
+            <img src="./img/sub/button.png" class="sub_show" alt="" style="z-index:2">
+            <p class="sub_click_area sub_toggle"></p>
+          </div>
+        </div>
+        <div class="sub_alert none">
+          <img src="./img/sub/alert.png" class="" alt="">
+          <button class="sub_back sub_toggle"></button>
+        </div>
+        <div class="swiper-button-next" style="animation-play-state:running;-webkit-animation-play-state:running">
+          <p class="next_top"></p>
+          <p class="next_bot"></p>
+        </div>
+      </div>
+      <div class="swiper-slide stop-swiping" data-hash="vslide3" style="height:100%;position:relative">
+        <div class="swiper-container swiper-container-h" style="height:100%">
+          <div class="map_alert map_alert_1 none" style="width:55.47vw;left:22.27vw;position:fixed;margin-top:34vw">
+            <img src="./img/map/alert1.png" style="width:55.47vw" alt="">
+            <p class="map_alert1_close"></p>
+          </div>
+          <div class="swiper-wrapper swiper_h" style="height:100%">
+            <div class="swiper-slide" data-hash="hslide1" style="width:100vw;height:100%">
+              <div class="map_bg_1"></div>
+              <img src="./img/map/prompt_1.png" class="map_prompt_1" alt="">
+              <div class="map_check_1"></div>
+              <p class="road_width_1">
+                <img src="./img/map/road_w_1.png" alt="">
+              </p>
+              <div class="map_btns_1">
+                <p class="map_class map_one_class"></p>
+                <p class="map_class map_two_class"></p>
+                <p class="map_class map_three_class"></p>
+              </div>
+            </div>
+            <div class="swiper-slide" data-hash="hslide2" style="width:79.8vw;height:100%">
+              <div class="map_alert map_alert_2 none" style="left:0;top:34vw">
+                <img src="./img/map/alert3.png" alt="">
+                <p class="map_alert2_close"></p>
+              </div>
+              <div class="map_alert map_alert_3 none" style="left:0;top:34vw">
+                <img src="./img/map/alert2.png" alt="">
+                <p class="map_alert3_close"></p>
+              </div>
+              <div class="map_bg_2"></div>
+              <img src="./img/map/prompt_2.png" class="map_prompt_2" alt="">
+              <div class="map_check_2"></div>
+              <p class="road_width_2">
+                <img src="./img/map/road_w_2.png" alt="">
+              </p>
+              <div class="map_btns_2">
+                <p class="map_class map_four_class"></p>
+                <p class="map_class map_five_class"></p>
+                <p class="map_class map_six_class"></p>
+              </div>
+              <p class="map_getScore none"></p>
+              <p class="map_change none"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide stop-swiping" data-hash="vslide4">
+          <img src="./img/ask_1/base.png" class="baseImg" alt="">
+          <img src="./img/ask_1/door.png" class="coverImg" alt="">
+          <div class="ask_ani ask1_ani" style="animation-play-state:paused;-webkit-animation-play-state:paused"></div>
+          <div class="ask1_cont columnCenter">
+            <div class="relative ask1_container">
+              <div class="ask1_question columnEnd ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="4s">
+                <img src="./img/ask_1/question.png" class="" alt="">
+                <div class="ask1_answer columnBetween" style="align-items:flex-start">
+                  <div class="rowBetween" style="width:100%">
+                    <p class="ask_answer ask1_a">A. Ethiopia</p>
+                    <p class="ask_answer ask1_a">B. Libya</p>
+                  </div>
+                  <p class="ask_answer ask1_a">C. Democratic Republic of Congo</p>
+                  <p class="ask_answer ask1_a">D. South Africa</p>
+                </div>
+              </div>
+              <div class="ask1_question_b columnBetween ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+                <p class="slice_bar"></p>
+                <img src="./img/ask_1/section.png" class="ask1_section ani" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-slide stop-swiping" data-hash="vslide5" style="background:#fffce2">
+        <div class="ask_ani ask2_ani" style="animation-play-state:paused;-webkit-animation-play-state:paused"></div>
+        <div class="ask_cont ask2_cont columnCenter">
+          <div class="relative ask2_container">
+            <div class="ask2_question_b columnBetween ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              <img src="./img/ask_2/section.png" class="ask2_section ani" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              <p class="slice_bar"></p>
+            </div>
+            <div class="ask_question ask2_question columnEnd ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4s">
+              <img src="./img/ask_2/question.png" class="" alt="">
+              <div class="ask_answerCount columnBetween" style="height:24vw;padding:5vw 6vw 4vw;align-items:flex-start">
+                <div class="rowBetween" style="width:100%">
+                  <p class="ask_answer ask_a ask2_a" style="width:35.8vw">A. Martin Luther King</p>
+                  <p class="ask_answer ask_a ask2_a" style="width:35.8vw">B. Abraham Lincoln</p>
+                </div>
+                <div class="rowBetween" style="width:100%">
+                  <p class="ask_answer ask_a ask2_a" style="width:35.8vw">C. John F. Kennedy</p>
+                  <p class="ask_answer ask_a ask2_a" style="width:35.8vw">D. Henry Kissinger</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide stop-swiping" data-hash="vslide6" style="background:#2f374e">
+        <div class="ask_ani ask3_ani" style="animation-play-state:paused;-webkit-animation-play-state:paused"></div>
+        <div class="ask_cont ask3_cont columnCenter">
+          <div class="relative ask3_container">
+            <div class="ask3_question_b columnBetween ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              <img src="./img/ask_3/section.png" class="ask3_section ani" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              <p class="slice_bar"></p>
+            </div>
+            <div class="ask_question ask3_question columnEnd ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4s">
+              <img src="./img/ask_3/question.png" class="" alt="">
+              <div class="ask_answerCount columnBetween" style="height:23vw;padding:5vw 7vw 4vw;align-items:flex-start">
+                <div class="rowBetween" style="width:100%">
+                  <p class="ask_answer ask_a ask3_a">A. Argentina</p>
+                  <p class="ask_answer ask_a ask3_a">B. Cuba</p>
+                </div>
+                <div class="rowBetween" style="width:100%">
+                  <p class="ask_answer ask_a ask3_a">C. Mexico</p>
+                  <p class="ask_answer ask_a ask3_a">D. Venezuela</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide stop-swiping" data-hash="vslide7" style="background:#fffce2">
+        <img src="./img/ask_4/pic.png" class="ask4_bg" alt="">
+        <img src="./img/ask_4/pillar.png" class="ask4_pillar" alt="">
+        <div class="ask_ani ask4_ani" style="animation-play-state:paused;-webkit-animation-play-state:paused"></div>
+        <div class="ask_cont ask4_cont columnCenter" style="position:absolute;z-index:5">
+          <div class="relative ask4_container">
+            <div class="ask4_question_b columnBetween ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              <img src="./img/ask_4/section.png" class="ask4_section ani" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              <p class="slice_bar"></p>
+            </div>
+            <div class="ask_question ask4_question columnEnd ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4s">
+              <img src="./img/ask_4/question.png" class="" alt="">
+              <div class="ask_answerCount columnBetween" style="height:21vw;padding:4vw 7vw 3vw;align-items:flex-start">
+                <div class="rowBetween" style="width:100%">
+                  <p class="ask_answer ask_a ask4_a">A. Austria</p>
+                  <p class="ask_answer ask_a ask4_a">B. Sri Lanka</p>
+                </div>
+                <div class="rowBetween" style="width:100%">
+                  <p class="ask_answer ask_a ask4_a">C. New Zealand</p>
+                  <p class="ask_answer ask_a ask4_a">D. Brazil</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide stop-swiping" data-hash="vslide8" style="background:#2e374e">
+        <div class="ask_ani ask5_ani" style="animation-play-state:paused;-webkit-animation-play-state:paused"></div>
+        <div class="ask_cont ask5_cont columnCenter">
+          <div class="relative ask5_container">
+            <div class="ask5_question_b columnBetween ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              <img src="./img/ask_5/section.png" class="ask5_section ani" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              <p class="slice_bar"></p>
+            </div>
+            <div class="ask_question ask5_question columnEnd ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4s">
+              <img src="./img/ask_5/question.png" class="" alt="">
+              <div class="ask_answerCount columnBetween" style="height:24vw;padding:5vw 7vw 4vw;align-items:flex-start">
+                <div class="rowBetween" style="width:100%">
+                  <p class="ask_answer ask_a ask5_a">A. Zero</p>
+                  <p class="ask_answer ask_a ask5_a">B. Two</p>
+                </div>
+                <div class="rowBetween" style="width:100%">
+                  <p class="ask_answer ask_a ask5_a">C. Four</p>
+                  <p class="ask_answer ask_a ask5_a">D. Nine</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide stop-swiping" data-hash="vslide9">
+        <div class="ask_ani ask6_ani" style="animation-play-state:paused;-webkit-animation-play-state:paused"></div>
+        <img src="./img/ask_6/bg.png" class="ask4_bg" alt="">
+        <img src="./img/ask_6/tree.png" class="ask6_tree" alt="">
+        <div class="ask_cont ask6_cont columnCenter" style="z-index:4">
+          <div class="relative ask6_container">
+            <div class="ask6_question_b columnBetween ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              <img src="./img/ask_6/section.png" class="ask6_section ani" alt="" swiper-animate-effect="fadeIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.5s">
+              <p class="slice_bar"></p>
+            </div>
+            <div class="ask_question ask6_question columnEnd ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="4s">
+              <img src="./img/ask_6/question.png" class="" alt="">
+              <div class="ask_answerCount ask6_answerCount columnBetween" style="align-items:flex-start">
+                <p class="ask_answer ask_a ask6_a">A. <i>The Sound and the Fury</i> by William Faulkner</p>
+                <p class="ask_answer ask_a ask6_a">B. <i>A Tale of Two Cities</i> by Charles Dickens</p>
+                <p class="ask_answer ask_a ask6_a">C. <i>The Old Man and the Sea</i> by Ernest Hemingway</p>
+                <p class="ask_answer ask_a ask6_a">D. <i>War and Peace</i> by Leo Tolstoy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide score_page stop-swiping" data-hash="vslide10">
+        <img src="./img/score/a.png" class="score_a none" alt="">
+        <img src="./img/score/b.png" class="score_b none" alt="">
+        <img src="./img/score/c.png" class="score_c none" alt="">
+      </div>
+    </div>
+
+    <!-- 导航按钮 -->
+    
+  </div>
+</body>
+<script type="text/javascript" src="./js/imgLoader.js"></script>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/swiper.min.js"></script>
+<script type="text/javascript" src="./js/swiper.animate.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+</html>
